@@ -19,11 +19,11 @@
       <div class="col-12 col-md-8 d-none d-xl-block">
         <nav class="site-navigation position-relative text-right" role="navigation">
           <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-            <li class="active"><a routerLink=""><span>Home</span></a></li>
-            <li><a routerLink="services"><span>Services</span></a></li>
-            <li><a routerLink="corona"><span>Corona Virus</span></a></li>
-            <li><a routerLink="aboutus"><span>About Us</span></a></li>
-            <li><a routerLink="contactus"><span>Contact Us</span></a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink=""><span>Home</span></a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="services"><span>Services</span></a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="corona"><span>Corona Virus</span></a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="aboutus"><span>About Us</span></a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="contactus"><span>Contact Us</span></a></li>
              <!-- <li class="has-children">
               <a routerLink="services.html"><span>Services</span></a>
               <ul class="dropdown arrow-top">
