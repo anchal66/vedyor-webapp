@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { OwlModule } from 'ngx-owl-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +14,7 @@ import { ContactComponent } from './component/contact/contact.component';
 import { ShopComponent } from './component/shop/shop.component';
 import { CoronaComponent } from './component/corona/corona.component';
 import { SolutionsComponent } from './component/solutions/solutions.component';
+import { AdminComponent } from './component/admin/admin.component';
 
 
 @NgModule({
@@ -24,12 +27,15 @@ import { SolutionsComponent } from './component/solutions/solutions.component';
     ContactComponent,
     ShopComponent,
     CoronaComponent,
-    SolutionsComponent
+    SolutionsComponent,
+    AdminComponent
   ],
   imports: [
     OwlModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

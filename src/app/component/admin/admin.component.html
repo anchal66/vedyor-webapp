@@ -1,0 +1,32 @@
+<div class="container">
+  <h1 class="my-5">Login For Admin:</h1>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="p-5 bg-white" *ngIf="!authService.loggedIn">
+    <div class="row form-group">
+
+      <div class="col-md-6">
+        <label class="text-black" for="email">Email</label>
+        <input type="email" id="email" class="form-control" name="email" ngModel>
+      </div>
+    </div>
+
+    <div class="row form-group">
+
+      <div class="col-md-6">
+        <label class="text-black" for="subject">Password</label>
+        <input type="password" id="subject" class="form-control" name="password" ngModel>
+      </div>
+    </div>
+
+    <div class="row form-group my-5">
+      <div class="col-md-6">
+        <input type="submit" value="Login" class="btn btn-pill btn-primary btn-md text-white">
+      </div>
+
+    </div>
+
+  </form>
+  <div *ngIf="authService.loggedIn" class="my-5">
+    <input (click)="signOut()" value="Log Off" class="btn btn-pill btn-primary btn-md text-white">
+  </div>
+  <p class="text-muted">Only For <span (click)="onPost()">Admins</span>...</p>
+</div>

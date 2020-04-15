@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { Route } from '@angular/compiler/src/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -11,14 +12,14 @@ export class HeaderComponent implements OnInit {
 
   currRoute;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public authService:AuthService) { }
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd ) {
         console.log(event.url);
         if(event.url === '/'){
-          this.currRoute = 'Home'
+          this.currRoute = ''
         }
         if(event.url === '/services'){
           this.currRoute = 'Our Services'
@@ -37,7 +38,5 @@ export class HeaderComponent implements OnInit {
         }
       }
     });
-
   }
-
 }

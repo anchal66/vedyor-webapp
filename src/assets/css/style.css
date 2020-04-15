@@ -885,14 +885,14 @@ h1, h2, h3, h4, h5,
   height: calc(30vh);
 }
 
-.site-blocks-cover h1 {
+.site-blocks-cover h2 {
   font-size: 4rem;
   font-weight: 300;
   color: #fff;
 }
 
 @media (max-width: 991.98px) {
-  .site-blocks-cover h1 {
+  .site-blocks-cover h2 {
     font-size: 2rem;
   }
 }
