@@ -5,11 +5,11 @@ body {
 	font-size: $font-size-base;
 
 }
-::-moz-selection { 
+::-moz-selection {
 	background: $black;
 	color: $white;
 }
-::selection { 
+::selection {
 	background: $black;
 	color: $white;
 }
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5,
 		width: 100%;
 		z-index: 2;
 		overflow: hidden;
-		
+
 		&:before {
 			opacity: 1;
 			visibility: visible;
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5,
 	padding-bottom: 18px;
 	padding-left: 30px;
 	padding-right: 30px;
-	
+
 	&.btn-sm {
 		padding-top: 7px;
 		padding-bottom: 7px;
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5,
 }
 
 .site-section-heading {
-	
+
 	position: relative;
 	font-size: 1.7rem;
 	@include media-breakpoint-up(md) {
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5,
 			width: 100px;
 			height: 1px;
 			background: $primary;
-		}	
+		}
 	}
 }
 
@@ -190,19 +190,19 @@ h1, h2, h3, h4, h5,
 	padding: 4em 0;
 	background: $white;
 	@include media-breakpoint-up(md) {
-		padding: 8em 0;	
+		padding: 8em 0;
 	}
 	.border-top {
 		border-top: 1px solid rgba(255,255,255,.1)!important;
 	}
 	p {
-		color: lighten($black, 45%); 
+		color: lighten($black, 45%);
 	}
 	h2,h3,h4,h5 {
 		color: $black;
 	}
 	a {
-		color: lighten($black, 60%); 
+		color: lighten($black, 60%);
 		&:hover {
 			color: $primary;
 		}
@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5,
 	position: relative;
 	transition: .3s all ease-in-out;
 	> span {
-		font-size: 50px;	
+		font-size: 50px;
 		position: absolute;
 		top: 50%;
 		left: 50%;

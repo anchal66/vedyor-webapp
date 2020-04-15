@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { OwlModule } from 'ngx-owl-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +10,8 @@ import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ShopComponent } from './component/shop/shop.component';
-import { ServicesComponent } from './components/services/services.component';
+import { CoronaComponent } from './component/corona/corona.component';
+
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { ServicesComponent } from './components/services/services.component';
     AboutComponent,
     ContactComponent,
     ShopComponent,
-    ServicesComponent
+    CoronaComponent
   ],
   imports: [
+    OwlModule,
     BrowserModule,
     AppRoutingModule
   ],
