@@ -11,6 +11,7 @@ import { AboutComponent } from './component/about/about.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ShopComponent } from './component/shop/shop.component';
 import { CoronaComponent } from './component/corona/corona.component';
+import { SolutionsComponent } from './component/solutions/solutions.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CoronaComponent } from './component/corona/corona.component';
     AboutComponent,
     ContactComponent,
     ShopComponent,
-    CoronaComponent
+    CoronaComponent,
+    SolutionsComponent
   ],
   imports: [
     OwlModule,
