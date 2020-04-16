@@ -77,6 +77,15 @@ jQuery(document).ready(function($) {
 			}
 		}) 
 
+		$('body').on('click', '.js-menu-toggle-mobile', function(e) {
+			var $this = $(this);
+
+			if ( $('body').hasClass('offcanvas-menu') ) {
+				$('body').removeClass('offcanvas-menu');
+			} 
+			window.scroll(0,500);
+		}) 
+
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
 	    var container = $(".site-mobile-menu");
